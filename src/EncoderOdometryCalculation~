@@ -1,0 +1,16 @@
+Odometry Calculation
+
+WheelDiameter (wd) = .52 m
+wheelradius(wr)=0.26m
+Wheel/Encoder (wencr)= 7.6
+wheelgap=0.615
+
+Encoder 
+1024 * 7.6 clicks 	= 360 degree
+1 click	(perClick)	= 360 / (1024 * 7.6)
+			= 0.046258224 degreesc
+
+
+encoder_count_constant=(np.pi*wheelradius*perClick)/180     //l=theta*r 
+                      =0.0002099131
+
